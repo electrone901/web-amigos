@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- yay -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- yay -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="img/appicon.jpg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>The Web Amigos</title>
+</head>
+
+<body>
+    <div class="mycontainer">
+        <!-- section top  -->
+        <section class="top-bar">
+            <div class="top-links lftflot">
+                <h6 id="email"><i class="fas fa-envelope-open"></i><a href="mailto:thewebamigos@gmail.com">theWebAmigos@gmail.com</a></h6>
+                <h6><i class="fas fa-phone"></i><a href="tel:+1 (646) 820-8499">+1 (646) 360-0420</a></h6>
+            </div>
+
+            <div class="top-links rgtflot">
+                <a href="https://gmail.com" class="topbar-btn"><i class="fas fa-bullhorn"></i> Request Proposal</a>
+
+                <div class="socialfollow">
+                    <a target="_blank" href="https://www.facebook.com/theWebAmigos/" class="facebook"><i
+                            class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/byBetoNY" class="twitter"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desk Navigation Bar -->
+        <nav class="deskNav">
+            <div class="deskNav__logo">
+                <a href="./index.html">
+                    <img src="./img/l.png" alt="theWebAmigos logo" class="deskNav__image" />
+                </a>
+            </div>
+            <ul class="deskNav__list">
+                <li class="deskNav__item">
+                    <a href="./index.html" class="deskNav__link">Home</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./about.html" class="deskNav__link">About</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./index.html#services" class="deskNav__link smooth-goto">Services</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./index.html#prices" class="deskNav__link smooth-goto">Prices</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./index.html#contract" class="deskNav__link smooth-goto">Process</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./index.html#portfolio" class="deskNav__link smooth-goto">Portfolio</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./contact.html" class="deskNav__link smooth-goto">Quote Request</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- mobile bar -->
+        <nav class="mobileNav">
+            <div class="mobileNav__container">
+                <div class="mobileLogoText">
+                    <a href="./index.html">
+                        <img src="./img/l.png" alt="theWebAmigos logo" class="mobileLogoText__image" />
+                    </a>
+                </div>
+                <div class="hamburger-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul class="mobileNav__list">
+                <li class="mobileNav__item">
+                    <a href="index.html" class="mobileNav_link">Home</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./about.html" class="mobileNav_link">About</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="index.html#services" class="mobileNav_link">Services</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="index.html#prices" class="mobileNav_link">Prices</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="index.html#portfolio" class="mobileNav_link">Portfolio</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./contact.html" class="mobileNav_link">Quote Request</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="contact">
+                <div class="contact__infor">
+                    <h1 class="contact__title">Let’s build the awesome website together for the world to see it</h1>
+                    <p>Fill out this form so we can know your needs</p>
+                </div>
+
+                <form method="POST" data-netlify="true" class="contact-form">
+                    <label for="name" class="contact-form__label">Name</label>
+                    <input class="contact-form__input" type="text" name="name" id="name" placeholder="ex - Joe Doe" required />
+
+                    <label for="email" class="contact-form__label">Email</label>
+                    <input class="contact-form__input" type="email" name="email" id="email" placeholder="ex - joedoe@mail.com" required />
+
+                    <label for="message" class="contact-form__label">Message</label>
+                    <textarea class="contact-form__input" name="message" id="message" placeholder="What your needs?" rows="5" required></textarea>
+                    <input class="contact-form__button" type="submit" value="Send Message" />
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__list">
+                    <p>Quick Links</p>
+                    <a href="#services" class="footer__link">Services</a>
+                    <a href="#prices" class="footer__link">Prices</a>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
+                </div>
+                <div class="footer__list">
+                    <p>About Us</p>
+                    <a href="./about.html" class="footer__link">Our Story</a>
+                    <a href="./about.html#team" class="footer__link">Meet the Team</a>
+                    <a href="./contact.html" class="footer__link">Contact Us</a>
+                </div>
+                <div class="footer__list">
+                    <p>Stay In Touch</p>
+                    <div class="footer__icons">
+                        <a target="_blank" href="https://www.facebook.com/theWebAmigos/" class="footer__icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/byBetoNY" class="footer__icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__text">
+                    &copy; 2020 The Web Amigos
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

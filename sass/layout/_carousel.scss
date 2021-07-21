@@ -1,0 +1,86 @@
+.carousel {
+    background: #535555;
+    margin-top: 20px;
+    position: relative;
+    color: $color-white;
+    &__btns {
+        position: absolute;
+        z-index: 20;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // @include respond(phone) {
+        //     width: 70%;
+        // }
+        @include respond(port) {
+            top: 67%;
+            left: 50%;
+        }
+    }
+    &__text {
+        z-index: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: slideIn;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        @include respond(phone) {
+            width: 80%;
+        }
+        & h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+            // text-transform: capitalize;
+            margin-bottom: 2rem;
+            @include respond(port) {
+                font-size: 2.7rem;
+                margin-bottom: 3rem;
+                font-weight: normal;
+            }
+        }
+        & p {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+            @include respond(port) {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+        & span {
+            color: $color-green-light;
+        }
+    }
+}
+
+.carousel-item {
+    text-align: center;
+    min-height: 230px;
+    /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.bs-example {
+    margin-top: 100px;
+}
+
+.carousel-img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 85vh;
+    // opacity: .3;
+    @include respond(port) {
+        height: 70vh;
+    }
+    @include respond(phone) {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .bs-example {
+        margin-top: 120px;
+    }
+}

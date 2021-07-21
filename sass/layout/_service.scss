@@ -1,0 +1,50 @@
+.service {
+    padding: 3rem 7rem;
+    @include respond(port) {
+        padding: 2rem 2rem;
+    }
+    &__title {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: $color-black-1;
+        @include respond(port) {
+            font-size: 3rem;
+        }
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5rem;
+        @include respond(port) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__container img {
+        width: 100%;
+    }
+    &__area {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        @include respond(port) {
+            margin-left: 0;
+            margin-top: 6rem;
+        }
+    }
+    &__card {
+        display: flex;
+        margin-bottom: 1rem;
+        & i {
+            font-size: 3rem;
+        }
+    }
+    &__text {
+        margin-left: 2rem;
+        & h3 {
+            font-size: 3.5rem;
+        }
+        & p {
+            font-size: 1.6rem;
+        }
+    }
+}

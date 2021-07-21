@@ -1,0 +1,141 @@
+.package {
+    perspective: 150rem;
+    position: relative;
+    height: 40rem;
+    width: 30rem;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+    &__side {
+        height: 46rem;
+        transition: transform 1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        &--front {
+            background-color: $color-green-light;
+        }
+        &--back {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: rotateY(-180deg);
+            &--1 {
+                @include backgroundGreen;
+            }
+            &--2 {
+                @include backgroundBlue;
+            }
+            &--3 {
+                @include backgroundPurple;
+            }
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+    @include respond(phone) {
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 40rem;
+        margin-left: 1.5rem;
+        &__side {
+            height: auto;
+            position: relative;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            &--back {
+                transform: rotateY(0);
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+    }
+    &__section {
+        background-color: $color-black-1;
+        min-height: 100vh;
+        padding-top: 2rem;
+    }
+    &__header {
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 5rem;
+        @include respond(port) {
+            font-size: 3rem;
+        }
+    }
+    &__price {
+        font-size: 4.5rem;
+        color: $color-white;
+        @include respond(phone) {
+            font-size: 4rem;
+            margin-top: 1.5rem;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        color: $color-black-1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 1rem;
+        &--1 {
+            @include backgroundGreen;
+        }
+        &--2 {
+            @include backgroundBlue;
+        }
+        &--3 {
+            @include backgroundPurple;
+        }
+    }
+    &__box {
+        padding: 3rem;
+        border: 1px solid $color-grey-1;
+        background-color: $color-grey-2;
+        color: $color-black-1;
+        @include respond(phone) {
+            margin-bottom: 1rem;
+        }
+    }
+    &__list {
+        margin-top: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        padding: 0.7rem 0.5rem;
+        font-size: 1.7rem;
+        line-height: 1.7;
+    }
+    &__button {
+        display: block;
+        width: 50%;
+        padding: 1rem;
+        border: 1px solid $color-black-1;
+        text-decoration: none;
+        color: $color-black-1;
+        font-size: 2rem;
+        background-color: $color-white;
+        margin: 2rem 0;
+        text-align: center;
+        border-radius: 20px;
+        &:hover,
+        &:visited {
+            color: black;
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.welcome {
+    padding: 7rem 7rem;
+    @include respond(port) {
+        padding: 5rem 3rem;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        color: #000;
+        font-size: 5rem;
+        @include respond(port) {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+    }
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3.5rem;
+        @include respond(port) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__secondary {
+        width: 80%;
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1.3;
+        margin: 2rem auto;
+    }
+    &__text h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+    &__text ul {
+        padding-left: 3rem;
+    }
+    &__text li {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    &__text p {
+        font-size: 2rem;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+
+.jum {
+    width: 50%;
+    margin: auto;
+}

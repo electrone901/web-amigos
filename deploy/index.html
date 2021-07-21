@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- yay -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- yay -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/jpg" href="img/appicon.jpg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>The Web Amigos</title>
+</head>
+
+<body>
+    <div class="mycontainer">
+        <!-- section top  -->
+        <section class="top-bar">
+            <div class="top-links lftflot">
+                <h6 class="email">
+                    <i class="fas fa-envelope-open"></i>
+                    <a href="mailto:thewebamigos@gmail.com">Email</a>
+                </h6>
+                <h6 id="whatApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://api.whatsapp.com/send?phone=16463600420" target="_blank">Call - Text</a>
+                </h6>
+
+
+            </div>
+
+            <div class="top-links rgtflot">
+                <a href="./contact.html" class="topbar-btn">
+                    <i class="fas fa-bullhorn"></i> Request Proposal
+                </a>
+
+                <div class="socialfollow">
+                    <a target="_blank" href="https://www.facebook.com/theWebAmigos/" class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/byBetoNY" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desk Navigation Bar -->
+        <nav class="deskNav">
+            <div class="deskNav__logo">
+                <a href="#">
+                    <img src="./img/l.png" alt="theWebAmigos logo" class="deskNav__image" />
+                </a>
+            </div>
+            <ul class="deskNav__list">
+                <li class="deskNav__item">
+                    <a href="#" class="deskNav__link smooth-goto">Home</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./about.html" class="deskNav__link">About</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="#services" class="deskNav__link smooth-goto">Services</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="#prices" class="deskNav__link smooth-goto">Prices</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="#contract" class="deskNav__link smooth-goto">Process</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="#portfolio" class="deskNav__link smooth-goto">Portfolio</a>
+                </li>
+                <li class="deskNav__item">
+                    <a href="./contact.html" class="deskNav__link">Quote Request</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- mobile bar -->
+        <nav class="mobileNav">
+            <div class="mobileNav__container">
+                <div class="mobileLogoText">
+                    <a href="#">
+                        <img src="./img/l.png" alt="theWebAmigos logo" class="mobileLogoText__image" />
+                    </a>
+                </div>
+                <div class="hamburger-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul class="mobileNav__list">
+                <li class="mobileNav__item">
+                    <a href="#" class="mobileNav_link">Home</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./about.html" class="mobileNav_link">About</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="#services" class="mobileNav_link">Services</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="#prices" class="mobileNav_link">Prices</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="#portfolio" class="mobileNav_link">Portfolio</a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./contact.html" class="mobileNav_link">Quote Request</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CAROUSEL -->
+        <div class="bs-example">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="20000">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slice_01.png" class="carousel-img" alt="First Slide" />
+                        <div class="carousel__text">
+                            <h1>
+                                If your website is not set up
+                                <span>for success</span> , or you’re not online, you’re Not In Business!
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/slice_02.jpeg" class="carousel-img" alt="Second Slide" />
+                        <div class="carousel__text">
+                            <h1>
+                                <span>Businesses with websites</span> get 6x more leads than those without, get your business online today!
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/slice_04.jpeg" class="carousel-img" alt="Second Slide" />
+                        <div class="carousel__text">
+                            <h1>
+                                You are regularly posting content to social media, but whithout a website, does it really
+                                <span>Lead to Sales?</span>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/slice_03.jpeg" class="carousel-img" alt="Second Slide" />
+
+                        <div class="carousel__text">
+
+                            <h1>
+                                Your followers could be your next customers, get your business online Today!
+                            </h1>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="carousel__btns">
+                    <!-- <h1>
+                            If your website is not set up
+                            <span>for success</span> , or you’re not online, you’re not in business
+                        </h1>
+                        <p></p> -->
+                    <a href="about.html" class="button button-link" role="button">
+                Learn more
+              </a>
+                    <a href="index.html#portfolio" class="button button-link u-bg-grey" role="button">
+                See Portfolio
+              </a>
+                </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section class="welcome" id="welcome">
+            <div class="welcome__main">
+                <div class="welcome__text">
+                    <h2>We understand your business needs</h2>
+                    <p>
+                        We are Dreamers, hard workers, and entrepreneurs. We know the technical side, and we can significantly impact your business especially on:
+                    </p>
+                    <ul>
+                        <li>Establishing credibility</li>
+                        <li>Building trust</li>
+                        <li>Engaging visitors</li>
+                        <li>Generating Leads</li>
+                        <li>Closing more sales</li>
+                    </ul>
+                    <p>
+                        Establish an online presence and start providing a digital storefront for your business today.
+                    </p>
+
+                    <!-- <h2>We understand your business needs</h2>
+                        <p>
+                            Our services are designed to help you with all aspects of your online business from designing to implementation, from deployment to production.
+                        </p> -->
+                </div>
+                <img src="https://touchbase-technologies.com/wp-content/uploads/2019/03/Website-Design-Development1.jpg" class="welcome__img" alt="Code It" />
+            </div>
+        </section>
+
+        <section id="services" class="service">
+            <h2 class="decorated">
+                <span class="service__title">Services</span>
+            </h2>
+            <div class="service__container">
+                <video id="video1" class="welcome__img" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://user-images.githubusercontent.com/87619763/126083899-1f203bd3-8cb5-4a20-9ed9-c77a692179be.mp4"
+                type="video/webm"
+              />
+              <source
+                src="https://user-images.githubusercontent.com/87619763/126083899-1f203bd3-8cb5-4a20-9ed9-c77a692179be.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+                <div class="service__area">
+                    <div class="service__card">
+                        <i class="fas fa-pen"></i>
+                        <div class="service__text">
+                            <h3>Design</h3>
+                            <p>We will design the perfect website for your business</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <i class="fas fa-file-code"></i>
+                        <div class="service__text">
+                            <h3>Development</h3>
+                            <p>We will develop your website from start to deployment</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <i class="fas fa-heart"></i>
+                        <div class="service__text">
+                            <h3>Marketing</h3>
+                            <p>We will help you market your product</p>
+                        </div>
+                    </div>
+                    <div class="service__card">
+                        <i class="far fa-chart-bar"></i>
+                        <div class="service__text">
+                            <h3>SEO</h3>
+                            <p>We will Increase your website traffic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="contract">
+            <h2 class="decorated">
+                <span class="process__header">Process</span>
+            </h2>
+            <div class="process__container">
+                <div class="process__text">
+                    <h2>Step 1</h2>
+                    <p>
+                        Send us a text to book a quick call to learn more about your business needs or pick one of our solution
+                        <a href="#prices">packages</a>
+                    </p>
+                </div>
+                <img src="./img/process1.png" alt="Call Us" />
+            </div>
+            <div class="process__container process__reverse">
+                <div class="process__text process__reverse-text">
+                    <h2>Step 2</h2>
+                    <p>
+                        We come up with a solution for your business with the most affordable prices
+                    </p>
+                </div>
+                <img src="./img/process2.png" alt="Meet Up" />
+            </div>
+            <div class="process__container">
+                <div class="process__text">
+                    <h2>Step 3</h2>
+                    <p>We develop and review your website together</p>
+                </div>
+                <img src="./img/process4.png " alt="Design It" />
+            </div>
+            <div class="process__container">
+                <div class="process__text process__reverse-text">
+                    <h2>Step 4</h2>
+                    <p>We launch and celebrate your new website</p>
+                </div>
+                <img src="./img/p3.gif" alt="Code It" />
+            </div>
+        </section>
+
+        <section class="packageSection" id="prices">
+            <h2 class="decorated">
+                <span class="package__header">Packages</span>
+            </h2>
+            <div class="packageSection__grid">
+                <div class="package">
+                    <div class="package__side package__side--front">
+                        <h3 class="package__title package__title--1">Basic</h3>
+                        <ul class="package__list">
+                            <li class="package__item green">&#10004; Up to Tree Pages</li>
+                            <li class="package__item green">&#10004; 2 Revisions</li>
+                            <li class="package__item green">
+                                &#10004; Simple Design
+                            </li>
+
+                            <li class="package__item green">
+                                &#10004; Responsive Design
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Social Media Integration
+                            </li>
+                            <li class="package__item green">
+                                &#10004; General web content included
+                            </li>
+
+                            <li class="package__item red">
+                                &#10007; Blog Setup
+                            </li>
+                            <li class="package__item red">
+                                &#10007; Contact Forms
+                            </li>
+
+                            <li class="package__item red">
+                                &#10007; Google Sitemap
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="package__side package__side--back package__side--back--1">
+                        <h3 class="package__price">
+                            <sup>$</sup> 200
+                        </h3>
+                        <a href="./contact.html" class="package__button">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="package">
+                    <div class="package__side package__side--front">
+                        <h3 class="package__title package__title--2">Pro</h3>
+                        <ul class="package__list">
+                            <li class="package__item green">&#10004; Up to five Pages</li>
+                            <li class="package__item green">&#10004; 3 Revisions</li>
+                            <li class="package__item green">
+                                &#10004; Customized Design
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Responsive Design
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Social Media Integration
+                            </li>
+                            <li class="package__item green">&#10004; Contact Forms</li>
+                            <li class="package__item green">
+                                &#10004; General web content included
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Blog Setup
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Google Sitemap
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="package__side package__side--back package__side--back--2">
+                        <h3 class="package__price">
+                            <sup>$</sup> 350
+                        </h3>
+                        <a href="./contact.html" class="package__button">Order Now</a>
+                    </div>
+                </div>
+                <div class="package">
+                    <div class="package__side package__side--front">
+                        <h3 class="package__title package__title--3">E-commerce</h3>
+                        <ul class="package__list">
+                            <li class="package__item green">&#10004; 10 Pages Plus</li>
+                            <li class="package__item green">&#10004; 10 Revisions</li>
+                            <li class="package__item green">
+                                &#10004; Up-to 100 Products
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Mini Shopping Cart
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Integration Payment
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Easy Product Search
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Content Management System (CMS)
+                            </li>
+                            <li class="package__item green">
+                                &#10004; Perfect for Small eCommerce
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+
+Add ons:
+Banner Design
+Google Analytics
+SSL
+SEO
+Ecommerce
+Marketing
+ -->
+                    <div class="package__side package__side--back package__side--back--3">
+                        <h3 class="package__price">
+                            <sup>$</sup> 1500
+                        </h3>
+                        <a href="./contact.html" class="package__button">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="decorated">
+                <span class="welcome__title">Portfolio</span>
+            </h2>
+            <div class="portfolio__container">
+                <div class="portfolio__card">
+                    <figure>
+                        <img src="img/project-1.png" alt="Project #1" />
+                        <figcaption>CheapNy</figcaption>
+                        <p>&#9734; React on the front end</p>
+                        <p>&#9734; Node.js on the back end</p>
+                        <p>&#9734; MongoDB for database</p>
+                        <a href="https://www.realcheapny.com/" class="site__button" target="_blank">
+                  See Site
+                </a>
+                    </figure>
+                </div>
+                <div class="portfolio__card">
+                    <figure>
+                        <img src="img/project-2.png" alt="Project #2" />
+                        <figcaption>La Zonita</figcaption>
+                        <p>&#9734; EJS on the front end</p>
+                        <p>&#9734; Node.js on the back end</p>
+                        <p>&#9734; MongoDB for database</p>
+                        <a href="https://lazonita.herokuapp.com/" class="site__button" target="_blank">
+                  See Site
+                </a>
+                    </figure>
+                </div>
+                <div class="portfolio__card">
+                    <figure>
+                        <img src="img/project-3.png" alt="Project #3" />
+                        <figcaption>FindSport2Play</figcaption>
+                        <p>&#9734; React on the front end</p>
+                        <p>&#9734; Node.js on the back end</p>
+                        <p>&#9734; MongoDB for database</p>
+                        <a href="https://findsport2play.herokuapp.com/" class="site__button" target="_blank">
+                  See Site
+                </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="getStarted">
+            <div class="getStarted__container">
+                <h2> Get your business online today!</h2>
+                <a href="https://api.whatsapp.com/send?phone=16463600420" target="_blank">Let's Chat <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__list">
+                <p>Quick Links</p>
+                <a href="#services" class="footer__link">Services</a>
+                <a href="#prices" class="footer__link">Prices</a>
+                <a href="#portfolio" class="footer__link">Portfolio</a>
+            </div>
+            <div class="footer__list">
+                <p>About Us</p>
+                <a href="./about.html" class="footer__link">Our Story</a>
+                <a href="./about.html#team" class="footer__link">Meet the Team</a>
+                <a href="./contact.html" class="footer__link">Contact Us</a>
+            </div>
+            <div class="footer__list">
+                <p>Stay In Touch</p>
+                <div class="footer__icons">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=16463600420" class="footer__icon"><i class="fab fa-whatsapp"></i></a>
+
+                    <a target="_blank" href="https://www.facebook.com/theWebAmigos/" class="footer__icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/byBetoNY" class="footer__icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__text">
+                <span>&copy;</span>
+                <span id="time"></span>
+                <span>The Web Amigos</span>
+
+                <p>Affordable prices with express results.</p>
+            </div>
+
+            <script>
+                const year = new Date().getFullYear()
+                document.getElementById('time').innerHTML = year
+            </script>
+        </div>
+    </footer>
+    </div>
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
