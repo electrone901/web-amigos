@@ -1,7 +1,16 @@
 .service {
     padding: 3rem 7rem;
+    .addOnsTittle {
+        padding-top: 5rem;
+    }
+    .addOns {
+        color: $color-green;
+    }
     @include respond(port) {
         padding: 2rem 2rem;
+        .addOnsTittle {
+            padding-top: 0rem;
+        }
     }
     &__title {
         font-size: 5rem;
