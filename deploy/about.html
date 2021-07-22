@@ -28,13 +28,16 @@
         <!-- section top  -->
         <section class="top-bar">
             <div class="top-links lftflot">
-                <h6 id="email">
+                <h6 class="email">
                     <i class="fas fa-envelope-open"></i>
-                    <a href="mailto:thewebamigos@gmail.com">theWebAmigos@gmail.com</a>
+                    <a href="mailto:thewebamigos@gmail.com">Email</a>
                 </h6>
-                <h6>
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+1 (646) 820-8499">+1 (646) 360-0420</a>
+
+                <h6 id="whatApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="whatsapp://send?text=Check out this website design, Web and App development solutions for your business with affordable prices: https://4dreamers.netlify.app/" target="_blank">
+              Share
+            </a>
                 </h6>
             </div>
 
@@ -53,7 +56,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Desk Navigation Bar -->
         <nav class="deskNav">
             <div class="deskNav__logo">
@@ -201,9 +203,7 @@
                                 Professionally trained software developer, skilled with the ability to identify challenges and meticulously solve them. I'm excited about building great products that help people to interact with technology and information in a new way.
                             </p>
                         </div>
-                        <a href="https://www.linkedin.com/in/luis-carbajal/" class="card__button" target="_blank">
-                Connect
-              </a>
+                        <button class="card__button">Connect</button>
                     </div>
                     <div class="card clearfix">
                         <img src="./img/about/song.jpg" class="card__img" alt="Song" />
@@ -214,9 +214,7 @@
                                 My name is You Song. I am a full stack Developer who enjoys building fun and awesome websites. During my free time, I created projects using modern technologies. I am always curious about learning new technologies.
                             </p>
                         </div>
-                        <a href="https://www.linkedin.com/in/you-song-hou" class="card__button" target="_blank">
-                Connect
-              </a>
+                        <button class="card__button">Connect</button>
                     </div>
                     <div class="card clearfix">
                         <img src="./img/about/Qike.jpeg" class="card__img" alt="Qike" />
@@ -259,9 +257,9 @@
             <div class="footer__grid">
                 <div class="footer__list">
                     <p>Quick Links</p>
-                    <a href="./index.html#services" class="footer__link">Services</a>
-                    <a href="./index.html#prices" class="footer__link">Prices</a>
-                    <a href="./index.html#portfolio" class="footer__link">Portfolio</a>
+                    <a href="#services" class="footer__link">Services</a>
+                    <a href="#prices" class="footer__link">Prices</a>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
                 </div>
                 <div class="footer__list">
                     <p>About Us</p>
@@ -272,6 +270,10 @@
                 <div class="footer__list">
                     <p>Stay In Touch</p>
                     <div class="footer__icons">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=16463600420" class="footer__icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
                         <a target="_blank" href="https://www.facebook.com/theWebAmigos/" class="footer__icon">
                             <i class="fab fa-facebook"></i>
                         </a>
@@ -280,9 +282,19 @@
                         </a>
                     </div>
                 </div>
-                <p class="footer__text">
-                    &copy; 2020 The Web Amigos
-                </p>
+
+                <div class="footer__text">
+                    <span>&copy;</span>
+                    <span id="time"></span>
+                    <span>The Web Amigos</span>
+
+                    <p>Affordable prices with express results.</p>
+                </div>
+
+                <script>
+                    const year = new Date().getFullYear()
+                    document.getElementById('time').innerHTML = year
+                </script>
             </div>
         </footer>
     </div>
