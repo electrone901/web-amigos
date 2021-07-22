@@ -1727,6 +1727,13 @@ h5 {
   padding: 7rem 7rem;
 }
 
+.welcome__iconText {
+  width: 8rem;
+  position: fixed;
+  bottom: -2px;
+  right: -2px;
+}
+
 @media only screen and (max-width: 56.25em) {
   .welcome {
     padding: 5rem 3rem;

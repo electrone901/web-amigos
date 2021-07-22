@@ -1,4 +1,18 @@
 .welcome {
+    &__iconWhatApp {
+        // font-size: 1rem;
+        // position: fixed;
+        // bottom: 0;
+        // right: 0;
+        // color: $color-green-dark;
+    }
+    &__iconText {
+        // font-size: 3rem;
+        width: 8rem;
+        position: fixed;
+        bottom: -2px;
+        right: -2px;
+    }
     padding: 7rem 7rem;
     @include respond(port) {
         padding: 5rem 3rem;
